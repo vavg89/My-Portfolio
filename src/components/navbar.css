@@ -1,0 +1,10 @@
+.auto-cursor-change:hover {
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre la imagen */
+  }
+
+  /* Estilos personalizados para la pestaña seleccionada */
+.selected-tab {
+    color: #000; /* Color de texto negro */
+    border-bottom: 2px solid #fff; /* Borde inferior blanco */
+  }
+  
