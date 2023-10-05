@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import './transition.css'; // Asegúrate de importar tu archivo CSS de transiciones
+import './navbar.css'; // Asegúrate de importar tu archivo CSS de transiciones
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importa el CSS de Bootstrap
 
 const ButtonWithTransition = () => {
   const [currentImage, setCurrentImage] = useState(1);
@@ -10,9 +12,7 @@ const ButtonWithTransition = () => {
 
   const handleClick = () => {
     if (!clicked) {
-      // Cambia el cursor al icono de una llave al hacer clic en la imagen
-      document.body.style.cursor = 'pointer';
-      setClicked(true);
+        setClicked(true);
     } else if (currentImage === 6) {
       // No hagas nada si ya se mostraron todas las imágenes
     } else {
@@ -31,7 +31,7 @@ const ButtonWithTransition = () => {
       return () => clearInterval(interval);
     } else if (currentImage === 6) {
       // Redirige al usuario al inicio cuando llegue a la última imagen
-      navigate('/home'); // Cambia '/home' a la URL de inicio real
+      navigate('/knowMe'); // Cambia '/home' a la URL de inicio real
     }
   }, [clicked, currentImage, navigate]);
 
@@ -50,12 +50,14 @@ const ButtonWithTransition = () => {
             }}
           >
             {currentImage <= 6 && (
-              <img
-                src={`../assets/${currentImage}.png`}
-                alt={`Imagen ${currentImage}`}
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
-                onClick={handleClick} // Permitir hacer clic en la imagen
-              />
+             <img
+             src={`../assets/${currentImage}.png`}
+             alt={`Imagen ${currentImage}`}
+             style={{ maxWidth: '100%', maxHeight: '100%' }}
+             onClick={handleClick}
+             className="auto-cursor-change"
+           />
+           
             )}
           </div>
         </CSSTransition>

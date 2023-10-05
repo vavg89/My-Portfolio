@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonWithTransition from '../components/ButtonWithTransition';
+import ExecutiveTransition from '../components/ExecutiveTransition';
 
 const landingStyle = {
   height: '100vh',
@@ -17,6 +18,7 @@ function Landing() {
       <div className="container">
         <div className="row">
        <ButtonWithTransition />
+       <ExecutiveTransition  />
         </div>
       </div>
     </div>
