@@ -4,6 +4,7 @@ import ExecutiveTransition from '../components/ExecutiveTransition';
 import WelcomeTransition from '../components/WelcomeTransition';
 import ClickMessage from '../components/clickMessage';
 import './landingPage.css';
+import '../components/ButtonWithTransition.css'
 
 function Landing() {
   const [showButton, setShowButton] = useState(false);
@@ -35,7 +36,7 @@ function Landing() {
           </div>
           
           <div>
-            {showButton && <ButtonWithTransition />}
+            {showButton && <ButtonWithTransition className="portfolioQuery"/>}
           </div>
         </div>
       </div>

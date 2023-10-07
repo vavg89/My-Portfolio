@@ -5,35 +5,35 @@
   @media (max-width: 576px) {
     .text-container-hola {
         font-size: 15px;
-       
+        top: 10%;
         position: absolute;
        
       }
   
       .text-container-quienSoy {
           font-size: 15px;
-          top: 10%;
+          top: 15%;
           position: absolute;
          
         }
   
         .text-container-miTitulo {
           font-size: 15px;
-          top: 15%;
+          top: 20%;
           position: absolute;
          
         }
   
         .text-container-conoceme {
           font-size: 15px;
-          top: 20%;
+          top: 25%;
           position: absolute;
          
         }
   
         .text-container-hasClick {
           font-size: 15px;
-          top: 25%;
+          top: 30%;
           position: absolute;
          
         }

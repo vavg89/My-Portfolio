@@ -35,7 +35,7 @@ const ButtonWithTransition = () => {
   }, [clicked, currentImage, navigate]);
 
   return (
-    <div className='ButtonWithTransition'>
+    <div className='ButtonWithTransition '>
       <SwitchTransition>
         <CSSTransition
           key={currentImage <= 6}
