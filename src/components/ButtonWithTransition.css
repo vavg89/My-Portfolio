@@ -1,0 +1,35 @@
+ @media (max-width: 768px) {
+   .ButtonWithTransition {
+      margin-top:200%;
+   }
+ }
+ 
+
+.fade{
+ .fade-enter{
+    opacity: 0;
+ }
+ .fade-exit{
+    opacity: 1;
+ }
+ .fade-enter-active{
+    opacity: 1;
+ }
+ .fade-exit-active{
+    opacity: 0;
+ }
+ .fade-enter-active,
+ .fade-exit-active{
+    transition: opacity 500ms;
+ }  
+}
+
+ .auto-cursor-change:hover {
+   cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre la imagen */
+ }
+ .divStyle{
+   margin-top:2%;
+   margin-left: 25%;
+   transition: opacity 1s ease;
+   
+ }

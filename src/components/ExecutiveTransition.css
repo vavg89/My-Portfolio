@@ -1,0 +1,7 @@
+/* Ocultar el componente ExecutiveTransition en pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .executive-transition {
+      display: none;
+    }
+  }
+  

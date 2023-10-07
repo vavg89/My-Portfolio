@@ -1,0 +1,10 @@
+/* Ocultar el componente ClickMessage en pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .click-message {
+      display: none;
+    }
+  }
+  .img {
+        margin-right: 100% ;
+         margin-top: 15%;
+  }

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
-import './transition.css'; // Asegúrate de importar tu archivo CSS de transiciones
-import './navbar.css'; // Asegúrate de importar tu archivo CSS de transiciones
+import './ButtonWithTransition.css'; // Asegúrate de importar tu archivo CSS de transiciones
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importa el CSS de Bootstrap
 
 const ButtonWithTransition = () => {
@@ -10,7 +9,7 @@ const ButtonWithTransition = () => {
   const [clicked, setClicked] = useState(false);
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const handleClick = () => { 
     if (!clicked) {
         setClicked(true);
     } else if (currentImage === 6) {
@@ -36,18 +35,15 @@ const ButtonWithTransition = () => {
   }, [clicked, currentImage, navigate]);
 
   return (
-    <div>
+    <div className='ButtonWithTransition'>
       <SwitchTransition>
         <CSSTransition
           key={currentImage <= 6}
           classNames="fade"
           timeout={4000}
         >
-          <div
-            style={{
-              transition: 'opacity 1s ease',
-              opacity: currentImage <= 6 ? 1 : 0,
-            }}
+          <div className='divStyle'
+           
           >
             {currentImage <= 6 && (
              <img
