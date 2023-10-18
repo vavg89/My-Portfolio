@@ -2,27 +2,29 @@ import React, { useState, useEffect } from 'react';
 import '../components/ExecutiveTransition.css';
 
 const ExecutiveTransition = () => {
-  const [position, setPosition] = useState('-600px'); // Comienza desde fuera del lado izquierdo
+  const [position, setPosition] = useState('-900px'); // Comienza desde fuera del lado izquierdo
 
   useEffect(() => {
     // Mostrar la imagen desde el lado izquierdo y moverla a la posición deseada
     setTimeout(() => {
-      setPosition('0.5cm'); 
+      setPosition('6cm'); 
     }, 500);
   }, []);
 
   return (
     <div className="executive-transition">
     <img
-      src="../assets/Ejecutivo.png" // Asegúrate de que la ruta sea correcta
-      alt="Ejecutivo"
+      src="../assets/empresario.png" // Asegúrate de que la ruta sea correcta
+      alt="empresario"
       style={{
         position: 'absolute',
         right: position, 
-        top: '15%', 
+        top: '30%', 
         width: '30%',
         transition: 'right 1s ease',
-        transitionDelay: '2.5s',
+        transitionDelay: '0.2s',
+        transform: 'scale(2)',
+        zIndex: -1,
         
         
       }}

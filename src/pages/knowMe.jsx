@@ -1,4 +1,5 @@
 import React from "react";
+import './knowMe.css'
 
 function knowMe() {
     return (
@@ -6,6 +7,7 @@ function knowMe() {
         <div>
           <p>Conoceme</p>
         </div>
+        <div className="bottom-filler" ></div>
       </div>
     );
   }

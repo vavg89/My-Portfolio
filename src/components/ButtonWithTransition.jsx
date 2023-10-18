@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
-import './ButtonWithTransition.css'; // Asegúrate de importar tu archivo CSS de transiciones
-import 'bootstrap/dist/css/bootstrap.min.css'; // Importa el CSS de Bootstrap
+import './ButtonWithTransition.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const ButtonWithTransition = () => {
   const [currentImage, setCurrentImage] = useState(1);
@@ -13,15 +13,15 @@ const ButtonWithTransition = () => {
     if (!clicked) {
         setClicked(true);
     } else if (currentImage === 6) {
-      // No hagas nada si ya se mostraron todas las imágenes
+      
     } else {
-      // Muestra la siguiente imagen
+     
       setCurrentImage(currentImage + 1);
     }
   };
 
   useEffect(() => {
-    // Cambiar automáticamente las imágenes cada 2 segundos después de hacer clic
+    
     if (clicked && currentImage < 6) {
       const interval = setInterval(() => {
         setCurrentImage((prevImage) => prevImage + 1);
@@ -29,8 +29,8 @@ const ButtonWithTransition = () => {
 
       return () => clearInterval(interval);
     } else if (currentImage === 6) {
-      // Redirige al usuario al inicio cuando llegue a la última imagen
-      navigate('/knowMe'); // Cambia '/home' a la URL de inicio real
+      
+      navigate('/knowMe'); 
     }
   }, [clicked, currentImage, navigate]);
 

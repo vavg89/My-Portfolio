@@ -1,13 +1,16 @@
 .text-color {
-    color: #000000;
+    color: #ffffff;
   }
   
   @media (max-width: 576px) {
     .text-container-hola {
         font-size: 15px;
-        top: 10%;
+        top: 10%; 
         position: absolute;
        
+      }
+      .img-Stripe-hola {
+        display: none;
       }
   
       .text-container-quienSoy {
@@ -16,12 +19,18 @@
           position: absolute;
          
         }
+        .img-Stripe-quienSoy {
+          display: none;
+        }
   
         .text-container-miTitulo {
           font-size: 15px;
           top: 20%;
           position: absolute;
          
+        }
+        .img-Stripe-miTitulo {
+          display: none;
         }
   
         .text-container-conoceme {
@@ -30,12 +39,18 @@
           position: absolute;
          
         }
+        .img-Stripe-conoceme {
+          display: none;
+        }
   
         .text-container-hasClick {
           font-size: 15px;
           top: 30%;
           position: absolute;
          
+        }
+        .img-Stripe-hasClick {
+          display: none;
         }
   }
   
@@ -46,12 +61,24 @@
         position: absolute;
        
       }
+      .img-Stripe-hola {
+        position: absolute;
+        
+        transform: scale(1);
+        z-Index: -1,
+      }
   
       .text-container-quienSoy {
           font-size: 30px;
           top: 10%;
           position: absolute;
          
+        }
+        .img-Stripe-quienSoy {
+          position: absolute;
+          top: 10%;
+          transform: scale(0.5);
+          z-Index: -1,
         }
   
         .text-container-miTitulo {
@@ -60,12 +87,25 @@
           position: absolute;
          
         }
+        .img-Stripe-miTitulo {
+          position: absolute;
+          top: 41%;
+          transform: scale(0.5);
+          z-Index: -1,
+        }
+  
   
         .text-container-conoceme {
           font-size: 30px;
           top: 20%;
           position: absolute;
          
+        }
+        .img-Stripe-conoceme {
+          position: absolute;
+          top:56%;
+          transform: scale(0.5);
+          z-Index: -1,
         }
   
         .text-container-hasClick {
@@ -74,43 +114,83 @@
           position: absolute;
          
         }
+        .img-Stripe-hasClick {
+          position: absolute;
+          top:71%;
+          transform: scale(0.5);
+          z-Index: -1,
+        }
   }
   
   @media (min-width: 992px) {
     .text-container-hola {
-      font-size: 50px;
+      font-size: 30px;
       top: 15%;
       position: absolute;
      
     }
 
+    .img-Stripe-hola {
+      position: absolute;
+      top: 10%;
+      transform: scale(0.5);
+      z-Index: -1,
+    }
+
     .text-container-quienSoy {
-        font-size: 50px;
+        font-size: 30px;
         top: 30%;
         position: absolute;
        
       }
 
+      .img-Stripe-quienSoy {
+        position: absolute;
+        top: 25%;
+        transform: scale(0.5);
+        z-Index: -1,
+      }
+
       .text-container-miTitulo {
-        font-size: 50px;
+        font-size: 30px;
         top: 45%;
         position: absolute;
        
       }
 
+      .img-Stripe-miTitulo {
+        position: absolute;
+        top: 41%;
+        transform: scale(0.5);
+        z-Index: -1,
+      }
+
       .text-container-conoceme {
-        font-size: 50px;
+        font-size: 30px;
         top: 60%;
         position: absolute;
        
       }
 
+      .img-Stripe-conoceme {
+        position: absolute;
+        top:56%;
+        transform: scale(0.5);
+        z-Index: -1,
+      }
+
       .text-container-hasClick {
-        font-size: 50px;
+        font-size: 30px;
         top: 75%;
         position: absolute;
        
       }
+      .img-Stripe-hasClick {
+        position: absolute;
+        top:71%;
+        transform: scale(0.5);
+        z-Index: -1,
+      }
   }
 
-
+ 

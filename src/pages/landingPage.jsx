@@ -12,13 +12,13 @@ function Landing() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowButton(true);
-    }, 4000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div> 
+    <div className='ImageClass' > 
        <div className="top-filler" ></div>
       <div className="container">
         <div className="row">
