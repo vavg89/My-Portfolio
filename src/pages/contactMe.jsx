@@ -1,8 +1,11 @@
 import React from "react";
+import './PagesStyless.css';
+import BottonsTransition from "../components/BottonsTransition";
 
 function contactMe() {
     return (
-      <div>
+      <div className="BackgroundBlack">
+        <BottonsTransition/>
         <div>
           <p>Contactame</p>
         </div>

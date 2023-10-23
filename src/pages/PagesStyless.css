@@ -1,0 +1,55 @@
+.img-fluid{
+  color: aliceblue;
+  margin-top: 25%;
+  margin-left: 3%;
+  max-width: 70%;
+  height: auto;
+}
+
+.text-container {
+  background-color: white;
+  margin-top: 16%;
+  margin-bottom: 15%;
+  padding: 20px;
+  border-radius: 1%;
+  
+}
+
+
+@media(max-width: 576px){
+
+  .BackgroundBlack {
+    background-image: url('../../public/assets/escritorio.jpg');
+    background-size: 400px 900px; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100cm;
+  }
+  body {
+    overflow-y: scroll;
+   
+  }
+}
+
+@media (min-width: 992px) {
+.BackgroundBlack {
+  background-image: url('../../public/assets/escritorio.jpg');
+  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
+  background-attachment: fixed; /* Asegura que la imagen de fondo permanezca en su posición mientras se desplaza el contenido */
+  z-index: -1; /* Asegura que la imagen de fondo esté por detrás de otros componentes */
+  position: fixed; /* Asegura que la posición de la imagen de fondo sea fija */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+ 
+}
+}

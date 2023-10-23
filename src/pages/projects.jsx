@@ -1,8 +1,11 @@
 import React from "react";
+import './PagesStyless.css';
+import BottonsTransition from "../components/BottonsTransition";
 
 function projects() {
     return (
-      <div>
+      <div className="BackgroundBlack">
+        <BottonsTransition/>
         <div>
           <p>Mis Proyectos</p>
         </div>

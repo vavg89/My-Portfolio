@@ -18,8 +18,8 @@ function Landing() {
   }, []);
 
   return (
-    <div className='ImageClass' > 
-       <div className="top-filler" ></div>
+    <div className='fondo' > 
+       
       <div className="container">
         <div className="row">
         
@@ -40,7 +40,7 @@ function Landing() {
           </div>
         </div>
       </div>
-      <div className="bottom-filler" ></div>
+     
     </div>
     
   );

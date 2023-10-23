@@ -1,18 +1,13 @@
-@media(max-width: 576px){
-
-body {
-  background-image: url('../public/assets/fondo.jpg'); 
-  background-size: auto cover; /* Ajusta la imagen de fondo al tamaño de la ventana del navegador */
-  background-repeat: no-repeat; 
-}
+.top-filler {
+  background-color: #000000;
+  height: 0.5cm;
+  z-index: 1;
 }
 
-@media (min-width: 992px) {
-
-  body {
-    background-image: url('../public/assets/fondo.jpg'); 
-    background-size: cover; 
-    
-  }
+.bottom-filler {
+  background-color: #000000;
+  height: 0.5cm;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-
