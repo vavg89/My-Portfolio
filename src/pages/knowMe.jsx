@@ -2,11 +2,16 @@ import React from "react";
 import './PagesStyless.css';
 import imagen from '../assets/Yo.png';
 import BottonsTransition from "../components/BottonsTransition";
+import TransitionComponent from '../components/TransitionComponent';
+
 
 function KnowMe() {
     return (
+       
         <div className="BackgroundBlack">
             <BottonsTransition/>
+            <TransitionComponent duration={1200} delay={200} opacity={1} marginTop={0}>
+
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
@@ -24,7 +29,11 @@ function KnowMe() {
                     </div>
                 </div>
             </div>
+            </TransitionComponent>
+            
+
         </div>
+        
     );
 }
 

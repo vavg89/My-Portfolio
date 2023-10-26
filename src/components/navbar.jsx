@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import TransitionComponent from '../components/TransitionComponent'
 import './navbar.css';
+import SideButton from "../components/SideButton";
 
 function Navbar() {
   const [selectedTab, setSelectedTab] = useState(
@@ -19,7 +21,9 @@ function Navbar() {
   }, []); 
 
   return (
-    <div className="indexBack">
+    <div>
+      <TransitionComponent duration={1200} delay={200} opacity={0} marginTop={0}>
+      <div className="indexBack">
       <ul className="nav justify-content-center">
         <li className="nav-item">
           <a
@@ -59,6 +63,11 @@ function Navbar() {
         </li>
       </ul>
     </div>
+    <SideButton/>  
+    </TransitionComponent> 
+      </div>
+    
+    
   );
 }
 
