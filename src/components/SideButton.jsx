@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import '../components/SideButton.css';
-import CustomTxtButton from './CustomLinkButton';
+import CustomTxtButton from "../components/CustomTxtButton";
+import whatsapp from "../assets/WhatsApp.png";
+import Correo from "../assets/Correo.png";
+import Cv from "../assets/cv.png";
 
 const SideButton = () => {
     const [position, setPosition] = useState('-900px');
     const [positionb, setPositionb] = useState('-3000px');
-    const conoceme = "Conoceme";
-    const tecnologias = "Tecnologias";
-    const contactame = "Contactame";
-    const conocemeUrl = "";
-    const contactameUrl = '';
-    const tecnologiasUrl = '';
+    const whatsApp = whatsapp;
+    const correo = Correo;
+    const cv = Cv;
+    
+    const wahtsappUrl = "https://wa.me/+5491127051235";
+    const correoUrl = '/contactMe';
+    const cvUrl = 'https://drive.google.com/file/d/1NO41C627No9xTA1jDr-V_csvwdCTT0O6/view?usp=sharing';
+   
    
     useEffect(() => {
       setTimeout(() => {
@@ -20,8 +25,8 @@ const SideButton = () => {
     }, []);
   
     useEffect(() => {
-      // Aquí puedes ajustar positionb según el mensaje específico que se muestra
-    }, [conocemeUrl, conoceme,contactameUrl ,contactame, tecnologiasUrl, tecnologias]);
+   
+    }, [wahtsappUrl, whatsApp,correoUrl ,correo, cvUrl,  cv]);
   
     return (
       <div >
@@ -42,7 +47,7 @@ const SideButton = () => {
             right: position,
             transition: 'right 1s ease',
           }}>
-          <CustomTxtButton linkUrl={conocemeUrl} imageUrl={conoceme} />
+          <CustomTxtButton linkUrl={wahtsappUrl} imageUrl={whatsApp} />
         </div>   
           </div>
           <div>
@@ -62,7 +67,7 @@ const SideButton = () => {
             right: position,
             transition: 'right 1s ease',
           }}>
-          <CustomTxtButton linkUrl={contactameUrl} imageUrl={tecnologias} />
+          <CustomTxtButton linkUrl={correoUrl} imageUrl={correo} />
         </div>          
       </div>  
        <div>
@@ -82,10 +87,10 @@ const SideButton = () => {
             right: position,
             transition: 'right 1s ease',
           }}>
-          <CustomTxtButton linkUrl={tecnologiasUrl} imageUrl={contactame} />
+          <CustomTxtButton linkUrl={cvUrl} imageUrl={cv} />
         </div>          
-      </div>  
-          </div>
+      </div>
+     </div>
        
         
     );

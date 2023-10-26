@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const CustomTxtButton = ({ linkUrl, imageUrl }) => {
     return (
-        <Link href={linkUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-            <p alt={imageUrl} className="button-image" />
-        </Link>
+        <Link to={linkUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+      <img src={imageUrl} alt="Imagen del botón" className="button-image" />
+    </Link>
     );
 };
 

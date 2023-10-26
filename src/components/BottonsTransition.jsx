@@ -10,7 +10,7 @@ const BottonsTransition = () => {
   const [positionb, setPositionb] = useState('-3000px');  
   const linkUrl = "https://www.linkedin.com/in/victor-vanderviest-193b34256/";
   const gitUrl = 'https://www.github.com/vavg89/';
-  const henryUrl = 'https://www.talent.soyhenry.com/es?searchInput=victor/';
+  const henryUrl = 'https://www.talent.soyhenry.com/es?searchInput=victor%20vanderviest';
   const linkedinImg=linkedin;
   const gitImg = github;
   const henryImg= henry;
@@ -23,7 +23,7 @@ const BottonsTransition = () => {
   }, []);
 
   useEffect(() => {
-    // Aquí puedes ajustar positionb según el mensaje específico que se muestra
+    
   }, [linkUrl, linkedinImg,gitUrl ,gitImg, henryUrl, henryImg]);
 
   return (

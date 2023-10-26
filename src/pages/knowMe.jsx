@@ -2,6 +2,7 @@ import React from "react";
 import './PagesStyless.css';
 import imagen from '../assets/Yo.png';
 import BottonsTransition from "../components/BottonsTransition";
+import SideButton from "../components/SideButton"
 import TransitionComponent from '../components/TransitionComponent';
 
 
@@ -10,6 +11,7 @@ function KnowMe() {
        
         <div className="BackgroundBlack">
             <BottonsTransition/>
+            <SideButton/>
             <TransitionComponent duration={1200} delay={200} opacity={1} marginTop={0}>
 
             <div className="container">
@@ -21,15 +23,20 @@ function KnowMe() {
                         <h2>Victor Vanderviest</h2>
                         <h3>Full Stack Developer</h3>
                         <p className="fade-in">
-                            ¡Bienvenido a mi portafolio! Siéntete libre de explorar y conocer las tecnologías que he adoptado durante mis más de 6 años de desarrollo profesional. Desde una edad temprana, desperté un apasionado interés por la tecnología. Aunque la vida me llevó por el camino de la administración, me permitió adquirir habilidades que luego apliqué en el desarrollo web.
+                        Soy un apasionado desarrollador Full Stack con una sólida experiencia en tecnologías como Redux, JavaScript, Node.js y Express, entre otros . Mi enfoque se basa en la implementación de prácticas de desarrollo ágiles  que permiten desarrollar sistemas robustos y escalables que ofrecen un rendimiento excepcional. Además, mi conocimiento en el desarrollo de interfaces de usuario (UI) y experiencia de usuario (UX) me permite crear productos atractivos y fáciles de usar.
 
-                            Comencé mi experiencia como analista QA en el año 2017. En 2021, logré mi primer empleo como desarrollador gracias a un excelente grupo que me brindó la oportunidad en Insucomp Venezuela. Actualmente, sigo formando parte de su equipo de desarrollo de manera remota desde Argentina. Participé en el bootcamp de Soy Henry, un instituto exigente que me desafió constantemente. Allí, adquirí conocimientos en excelentes tecnologías y fortalecí mis habilidades como programador web. Aun sigo en la búsqueda de adquirir nuevos conocimientos y habilidades, ya que considero que tengo un pensamiento crítico y por ende busco mantenerme a la vanguardia de la tecnología para poder aplicar las mejores técnicas a mis proyectos y actividades. Me integro fácilmente con mi equipo de trabajo y colaboro en todo lo posible con mis compañeros. Mantengo siempre una comunicación fluida con el equipo. Soy una persona comprometida y respeto los plazos de entrega de mis actividades. ¡Sigue explorando mi portafolio y no dudes en contactarme si tienes alguna duda!
+                        He trabajado en entornos de integración y entrega continua (CI/CD) para garantizar la eficiencia y la calidad del código. Mi familiaridad con metodologías ágiles ha demostrado ser fundamental para la entrega de proyectos exitosos en plazos ajustados, y mi experiencia en el diseño y manejo de bases de datos relacionales ha sido fundamental para la creación de sistemas de datos eficientes y seguros.
+
+                        Si estás buscando un profesional con un enfoque en la excelencia técnica y la innovación constante, ¡has llegado al lugar adecuado!
+
+                        ¡Explora mi portafolio para descubrir más sobre mis proyectos y habilidades!
 
                         </p>
                     </div>
                 </div>
             </div>
             </TransitionComponent>
+            
             
 
         </div>

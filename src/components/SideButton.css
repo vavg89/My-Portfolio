@@ -83,6 +83,23 @@
       transform: scale(0.5) scaleX(-1);;
       z-Index: -1,
     }
+
+    .container-4 {
+      margin-top: 37.2%;
+      position: absolute;
+      transition: transform 0.3s ease; /* Agrega una transición suave al hacer escala */
+    }
+    
+    .container-4:hover {
+      transform: scale(1.1); /* Escala el elemento al pasar el mouse sobre él */
+    }
+
+    .Stripe-4 {
+      position: absolute;
+      top: 70.9%;
+      transform: scale(0.5) scaleX(-1);;
+      z-Index: -1,
+    }
   
   }
 
