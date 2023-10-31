@@ -1,3 +1,38 @@
+
+@media(max-width: 576px){
+
+  .BackgroundBlack {
+    background-image: url('../../public/assets/escritorio.jpg');
+    background-size: 400px 900px; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+  }
+  body {
+    overflow-y: scroll;
+   
+  }
+}
+
+@media (min-width: 992px) {
+
+.Background {
+    background: linear-gradient(135deg, #8697c9, #4169e1);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 .img-fluid{
   color: aliceblue;
   margin-top: 25%;
@@ -14,41 +49,31 @@
   border-radius: 1%;
 }
 
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  
+ }
 
-@media(max-width: 576px){
-
-  .BackgroundBlack {
-    background-image: url('../../public/assets/escritorio.jpg');
-    background-size: 400px 900px; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed;  
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100cm;
-  }
-  body {
-    overflow-y: scroll;
-   
-  }
+.image-container {
+  margin: 5%;
+  cursor: pointer;
+  
 }
 
-@media (min-width: 992px) {
-.BackgroundBlack {
-  background-image: url('../../public/assets/escritorio.jpg');
-  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
-  background-attachment: fixed; /* Asegura que la imagen de fondo permanezca en su posición mientras se desplaza el contenido */
-  z-index: -1; /* Asegura que la imagen de fondo esté por detrás de otros componentes */
-  position: fixed; /* Asegura que la posición de la imagen de fondo sea fija */
-  top: 0;
-  left: 0;
+.tech-image {
   width: 100%;
   height: 100%;
+  border: 4px solid transparent;
+  transition: border 0.5s;
+  border-color: #000000;
 }
-body {
-  overflow-x: hidden;
- 
-}
+
+
+
+
 }

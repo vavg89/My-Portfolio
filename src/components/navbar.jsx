@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
-import TransitionComponent from '../components/TransitionComponent';
+import { Link, useLocation  } from 'react-router-dom'; // Importa Link desde react-router-dom
 import './navbar.css';
 
 function Navbar() {
+  const defaultTab = 'Conoceme'; // Valor predeterminado para la pestaña seleccionada
+  const location = useLocation();
+
+  const setInitialTab = (tab) => {
+    localStorage.setItem('selectedTab', tab);
+  };
+
   const [selectedTab, setSelectedTab] = useState(
-    localStorage.getItem('selectedTab') || 'Conoceme'
+    localStorage.getItem('selectedTab') || defaultTab
   );
 
   const handleTabClick = (tab) => {
@@ -15,20 +21,22 @@ function Navbar() {
 
   useEffect(() => {
     const storedTab = localStorage.getItem('selectedTab');
-    if (storedTab) {
+    if (!storedTab && location.pathname === '/') {
+      setInitialTab(defaultTab); // Establecer la pestaña predeterminada si no hay valor en localStorage
+      setSelectedTab(defaultTab);
+    } else if (storedTab) {
       setSelectedTab(storedTab);
     }
-  }, []);
+  }, [location.pathname]);
 
   return (
-    <div>
-      <TransitionComponent duration={1200} delay={200} opacity={0} marginTop={0}>
-        <div className="indexBack">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-center">
+         <div className="indexBack">
           <ul className="nav justify-content-center">
             <li className="nav-item">
               <Link
                 to="/knowMe" // Usa Link en lugar de la etiqueta 'a'
-                className={selectedTab === 'Conoceme' ? 'nav-link text-primary selected-tab' : 'nav-link text-black'}
+                className={selectedTab === 'Conoceme' ? 'nav-link text-primary selected-tab' : 'nav-link text-white'}
                 onClick={() => handleTabClick('Conoceme')}
               >
                 Conoceme
@@ -36,8 +44,8 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/tecnologies"
-                className={selectedTab === 'Tecnologias' ? 'nav-link text-primary selected-tab' : 'nav-link text-black'}
+                to="/technologies"
+                className={selectedTab === 'Tecnologias' ? 'nav-link text-primary selected-tab' : 'nav-link text-white'}
                 onClick={() => handleTabClick('Tecnologias')}
               >
                 Tecnologías
@@ -46,7 +54,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/projects"
-                className={selectedTab === 'Proyectos' ? 'nav-link text-primary selected-tab' : 'nav-link text-black'}
+                className={selectedTab === 'Proyectos' ? 'nav-link text-primary selected-tab' : 'nav-link text-white'}
                 onClick={() => handleTabClick('Proyectos')}
               >
                 Proyectos
@@ -55,7 +63,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/contactMe"
-                className={selectedTab === 'Contactame' ? 'nav-link text-primary selected-tab' : 'nav-link text-black'}
+                className={selectedTab === 'Contactame' ? 'nav-link text-primary selected-tab' : 'nav-link text-white'}
                 onClick={() => handleTabClick('Contactame')}
               >
                 Contáctame
@@ -63,8 +71,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-      </TransitionComponent>
-    </div>
+        </nav>
   );
 }
 

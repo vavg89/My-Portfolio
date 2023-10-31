@@ -12,6 +12,7 @@ function Landing() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowButton(true);
+      localStorage.setItem('selectedTab', 'Conoceme'); // Establecer la pestaña seleccionada en 'Conoceme'
     }, 2500);
 
     return () => clearTimeout(timer);

@@ -4,7 +4,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Landing from './pages/landingPage';
 import KnowMe from './pages/knowMe'; // Asegúrate de que el nombre del componente coincida con la importación
-import Tecnologies from './pages/tecnologies';
+import Tecnologies from './pages/technologies';
 import Projects from './pages/projects';
 import ContactMe from './pages/contactMe';
 
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route exact path="/"  element={<Landing />} />
         <Route path="/knowMe" element={<KnowMe />} />
-        <Route path="/tecnologies" element={<Tecnologies />} />
+        <Route path="/technologies" element={<Tecnologies />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contactMe" element={<ContactMe />} />
       </Routes>

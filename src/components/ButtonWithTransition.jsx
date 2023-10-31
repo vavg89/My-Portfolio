@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation  } from 'react-router-dom';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import './ButtonWithTransition.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
@@ -8,6 +8,7 @@ const ButtonWithTransition = () => {
   const [currentImage, setCurrentImage] = useState(1);
   const [clicked, setClicked] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleClick = () => { 
     if (!clicked) {
@@ -21,18 +22,16 @@ const ButtonWithTransition = () => {
   };
 
   useEffect(() => {
-    
     if (clicked && currentImage < 6) {
       const interval = setInterval(() => {
         setCurrentImage((prevImage) => prevImage + 1);
       }, 80);
-
+  
       return () => clearInterval(interval);
-    } else if (currentImage === 6) {
-      
-      navigate('/knowMe'); 
+    } else if (currentImage === 6 && location.pathname !== '/knowMe') {
+      navigate('/knowMe');
     }
-  }, [clicked, currentImage, navigate]);
+  }, [clicked, currentImage, location, navigate]);
 
   return (
     <div className='ButtonWithTransition '>

@@ -9,10 +9,10 @@ import TransitionComponent from '../components/TransitionComponent';
 function KnowMe() {
     return (
        
-        <div className="BackgroundBlack">
+        <div className= "Background container-fluid">
             <BottonsTransition/>
             <SideButton/>
-            <TransitionComponent duration={1200} delay={200} opacity={1} marginTop={0}>
+            <TransitionComponent duration={1200} delay={200} opacity={1} marginTop={0} AnimatedActive={false}>
 
             <div className="container">
                 <div className="row">

@@ -27,7 +27,7 @@ const BottonsTransition = () => {
   }, [linkUrl, linkedinImg,gitUrl ,gitImg, henryUrl, henryImg]);
 
   return (
-    <div >
+    <div>
         <div>
 
             <img
