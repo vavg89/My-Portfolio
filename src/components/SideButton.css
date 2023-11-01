@@ -54,17 +54,17 @@
     .container-1{
       margin-top: 17.2%;
       position: absolute;
-      transition: transform 0.3s ease; /* Agrega una transición suave al hacer escala */
+      transition: transform 0.3s ease;
       z-index: 1;
     }
     
     .container-1:hover {
-      transform: scale(1.1); /* Escala el elemento al pasar el mouse sobre él */
+      transform: scale(1.1); 
     }
 
     .Stripe-1 {
       position: absolute;
-      top: 31%;
+      margin-top: 15%;
       transform: scale(0.5) scaleX(-1);;
       z-Index: 1,
     }
@@ -72,17 +72,17 @@
     .container-2{
       margin-top: 25.2%;
       position: absolute;
-      transition: transform 0.3s ease; /* Agrega una transición suave al hacer escala */
+      transition: transform 0.3s ease; 
       z-index: 1;
     }
     
     .container-2:hover {
-      transform: scale(1.1); /* Escala el elemento al pasar el mouse sobre él */
+      transform: scale(1.1); 
     }
 
     .Stripe-2 {
       position: absolute;
-      top: 47.7%;
+      margin-top: 23%;
       transform: scale(0.5) scaleX(-1);;
      
     }
@@ -90,17 +90,17 @@
     .container-3 {
       margin-top: 33.2%;
       position: absolute;
-      transition: transform 0.3s ease; /* Agrega una transición suave al hacer escala */
+      transition: transform 0.3s ease; 
       z-index: 1;
     }
     
     .container-3:hover {
-      transform: scale(1.1); /* Escala el elemento al pasar el mouse sobre él */
+      transform: scale(1.1); 
     }
 
     .Stripe-3 {
       position: absolute;
-      top: 64%;
+      margin-top: 31%;
       transform: scale(0.5) scaleX(-1);;
       z-Index: 1,
     }

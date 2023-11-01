@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import CustomModal from './CustomModal';
+
 import './navbar.css';
 
 function Navbar({ parallax }) {
@@ -16,9 +18,7 @@ function Navbar({ parallax }) {
       setSelectedTab('Tecnologias');
     } else if (scrollPosition >= pagePositions[2] && scrollPosition < pagePositions[3]) {
       setSelectedTab('Proyectos');
-    } else {
-      setSelectedTab('Contactame');
-    }
+    } 
   };
 
   useEffect(() => {
@@ -63,14 +63,11 @@ function Navbar({ parallax }) {
               Proyectos
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={selectedTab === 'Contactame' ? 'nav-link text-primary selected-tab' : 'nav-link text-white'}
-              onClick={() => handleTabClick('Contactame', 3)}
-            >
-              Contáctame
-            </button>
-          </li>
+          
+           
+              <CustomModal/>
+          
+        
         </ul>
       </div>
     </nav>

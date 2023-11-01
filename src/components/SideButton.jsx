@@ -13,7 +13,7 @@ const SideButton = () => {
     const cv = Cv;
     
     const wahtsappUrl = "https://wa.me/+5491127051235";
-    const correoUrl = '/contactMe';
+    const correoUrl = '/contacMe';
     const cvUrl = 'https://drive.google.com/file/d/1NO41C627No9xTA1jDr-V_csvwdCTT0O6/view?usp=sharing';
    
    
