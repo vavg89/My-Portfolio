@@ -1,9 +1,27 @@
 @media (max-width: 576px) {
     .container-1 {
         font-size: 15px;
-        top: 10%; 
+        margin-right: -10%;
+        top: 93%;
         position: absolute;
-       
+        z-index: 1;
+        transform: scale(0.9);
+      }
+      .container-2 {
+        font-size: 15px;
+        margin-right: 7%;
+        top: 93%; 
+        position: absolute;
+        z-index: 1;
+        transform: scale(0.9);
+      }
+      .container-3 {
+        font-size: 15px;
+        margin-right: 24%;
+        top: 93%; 
+        position: absolute;
+        z-index: 1;
+        transform: scale(0.9);
       }
       .Stripe-1 {
         display: none;
@@ -27,7 +45,7 @@
         position: absolute;
         
         transform: scale(1);
-        z-Index: -1,
+        z-Index: 1,
       }
       
   }
@@ -37,6 +55,7 @@
       margin-top: 17.2%;
       position: absolute;
       transition: transform 0.3s ease; /* Agrega una transición suave al hacer escala */
+      z-index: 1;
     }
     
     .container-1:hover {
@@ -47,13 +66,14 @@
       position: absolute;
       top: 31%;
       transform: scale(0.5) scaleX(-1);;
-      z-Index: -1,
+      z-Index: 1,
     }
 
     .container-2{
       margin-top: 25.2%;
       position: absolute;
       transition: transform 0.3s ease; /* Agrega una transición suave al hacer escala */
+      z-index: 1;
     }
     
     .container-2:hover {
@@ -64,13 +84,14 @@
       position: absolute;
       top: 47.7%;
       transform: scale(0.5) scaleX(-1);;
-      z-Index: -1,
+     
     }
 
     .container-3 {
       margin-top: 33.2%;
       position: absolute;
       transition: transform 0.3s ease; /* Agrega una transición suave al hacer escala */
+      z-index: 1;
     }
     
     .container-3:hover {
@@ -81,7 +102,7 @@
       position: absolute;
       top: 64%;
       transform: scale(0.5) scaleX(-1);;
-      z-Index: -1,
+      z-Index: 1,
     }
 
      

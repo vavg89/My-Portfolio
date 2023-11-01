@@ -1,7 +1,5 @@
 import React from "react";
 import './PagesStyless.css';
-import BottonsTransition from "../components/BottonsTransition";
-import SideButton from "../components/SideButton"
 import TransitionImage from "../components/TransitionImage"
 import Bootstrap from '../assets/bootstrap.png';
 import Fingma from "../assets/figma.png";
@@ -50,9 +48,8 @@ const images = [
 function Technologies() {
   
   return (
-    <div className="Background container-fluid">
-      <BottonsTransition/>
-      <SideButton/>
+    <div className="container-fluid">
+      
       <div className="images-container">
         {images.map((image, index) => (
           <TransitionImage key={index} delay={(index + 1) * 5} url={image.url}>

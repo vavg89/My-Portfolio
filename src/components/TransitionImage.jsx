@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { Link } from 'react-router-dom';
+import '../pages/PagesStyless.css';
 
 const TransitionImage = ({ children, delay, url }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,12 +22,7 @@ const TransitionImage = ({ children, delay, url }) => {
   });
 
   return (
-    <div
-      style={{
-        justifyContent: 'center',
-        margin: "4%"
-      }}
-    >
+    <div className='images'>
       <animated.div
         style={rainProps}
         onMouseEnter={() => setIsHovered(true)}

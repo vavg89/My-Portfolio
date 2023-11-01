@@ -1,9 +1,27 @@
   @media (max-width: 576px) {
-    .container-1 {
-        font-size: 15px;
-        top: 10%; 
+    .container-img-1 {
+      font-size: 15px;
+      margin-left: 6.5%;
+      top: 93%;
+      position: absolute;
+      z-index: 1;
+      transform: scale(0.9);
+      }
+    .container-img-2 {
+      font-size: 15px;
+        margin-left: -10%;
+        top: 93%; 
         position: absolute;
-       
+        z-index: 1;
+        transform: scale(0.9);
+      }
+    .container-img-3 {
+      font-size: 15px;
+      margin-left: 23%;
+      top: 93%; 
+      position: absolute;
+      z-index: 1;
+      transform: scale(0.9);
       }
       .img-Stripe-1 {
         display: none;
@@ -36,11 +54,12 @@
     .container-img-1{
       margin-top: 17.2%;
       position: absolute;
-      transition: transform 0.3s ease; /* Agrega una transición suave al hacer escala */
+      transition: transform 0.3s ease;
+      z-index: 1;
     }
     
     .container-img-1:hover {
-      transform: scale(1.1); /* Escala el elemento al pasar el mouse sobre él */
+      transform: scale(1.1);
     }
 
     .img-Stripe-1 {
@@ -53,11 +72,12 @@
     .container-img-2{
       margin-top: 25.2%;
       position: absolute;
-      transition: transform 0.3s ease; /* Agrega una transición suave al hacer escala */
+      transition: transform 0.3s ease;
+      z-index: 1;
     }
     
     .container-img-2:hover {
-      transform: scale(1.1); /* Escala el elemento al pasar el mouse sobre él */
+      transform: scale(1.1); 
     }
 
     .img-Stripe-2 {
@@ -70,11 +90,12 @@
     .container-img-3 {
       margin-top: 33.2%;
       position: absolute;
-      transition: transform 0.3s ease; /* Agrega una transición suave al hacer escala */
+      transition: transform 0.3s ease;
+      z-index: 1;
     }
     
     .container-img-3:hover {
-      transform: scale(1.1); /* Escala el elemento al pasar el mouse sobre él */
+      transform: scale(1.1); 
     }
 
     .img-Stripe-3 {
