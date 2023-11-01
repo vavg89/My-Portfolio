@@ -6,8 +6,7 @@ import Correo from "../assets/Correo.png";
 import Cv from "../assets/cv.png";
 
 const SideButton = () => {
-    const [position, setPosition] = useState('-900px');
-    const [positionb, setPositionb] = useState('-3000px');
+    const [position, setPosition] = useState('-900px'); 
     const whatsApp = whatsapp;
     const correo = Correo;
     const cv = Cv;
@@ -19,8 +18,7 @@ const SideButton = () => {
    
     useEffect(() => {
       setTimeout(() => {
-        setPosition('1cm');
-        setPositionb('-65%');
+        setPosition('1cm');       
       }, 500);
     }, []);
   
@@ -30,17 +28,7 @@ const SideButton = () => {
   
     return (
       <div >
-          <div>
-  
-              <img
-          className='Stripe-1'
-          src="../assets/franja.png"
-          alt="Franja"
-          style={{         
-            right: positionb,          
-            transition: 'right 0.9s ease',          
-          }}
-        />
+          <div>        
         <div
           className={`container-1`}
           style={{
@@ -50,17 +38,7 @@ const SideButton = () => {
           <CustomTxtButton linkUrl={wahtsappUrl} imageUrl={whatsApp} />
         </div>   
           </div>
-          <div>
-  
-            <img
-          className='Stripe-2'
-          src="../assets/franja.png"
-          alt="Franja"
-          style={{         
-            right: positionb,          
-            transition: 'right 0.9s ease',          
-          }}
-        />
+          <div>        
         <div
           className={`container-2`}
           style={{
@@ -70,17 +48,7 @@ const SideButton = () => {
           <CustomTxtButton linkUrl={correoUrl} imageUrl={correo} />
         </div>          
       </div>  
-       <div>
-  
-            <img
-          className='Stripe-3'
-          src="../assets/franja.png"
-          alt="Franja"
-          style={{         
-            right: positionb,          
-            transition: 'right 0.9s ease',          
-          }}
-        />
+       <div>       
         <div
           className={`container-3`}
           style={{

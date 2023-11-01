@@ -23,16 +23,7 @@
       z-index: 1;
       transform: scale(0.9);
       }
-      .img-Stripe-1 {
-        display: none;
-      }
-      .img-Stripe-2 {
-        display: none;
-      }
-      .img-Stripe-3 {
-        display: none;
-      }
-    }
+        }
   
   @media (min-width: 577px) and (max-width: 991px) {
     .container-img {
@@ -41,12 +32,7 @@
         position: absolute;
        
       }
-      .img-Stripe {
-        position: absolute;
-        
-        transform: scale(1);
-        z-Index: -1,
-      }
+   
       
   }
   
@@ -62,12 +48,7 @@
       transform: scale(1.1);
     }
 
-    .img-Stripe-1 {
-      position: absolute;
-      margin-top: 15%;
-      transform: scale(0.5);
-      z-Index: -1,
-    }
+ 
 
     .container-img-2{
       margin-top: 25.2%;
@@ -80,12 +61,7 @@
       transform: scale(1.1); 
     }
 
-    .img-Stripe-2 {
-      position: absolute;
-      margin-top: 23%;
-      transform: scale(0.5);
-      z-Index: -1,
-    }
+  
 
     .container-img-3 {
       margin-top: 33.2%;
@@ -98,12 +74,7 @@
       transform: scale(1.1); 
     }
 
-    .img-Stripe-3 {
-      position: absolute;
-      margin-top: 31%;
-      transform: scale(0.5) ;
-      z-Index: -1,
-    }
+  
   
   }
 

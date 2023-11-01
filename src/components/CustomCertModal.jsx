@@ -23,9 +23,9 @@ const CustomCertModal = () => {
   });
 
   const certificates = [
-    { id: 1, imgSrc: CerHenry, linkUrl: 'enlace_1' },
-    { id: 2, imgSrc: CerDB, linkUrl: 'enlace_2' },
-    { id: 3, imgSrc: CerTest, linkUrl: 'enlace_2' },
+    { id: 1, imgSrc: CerHenry, linkUrl: 'https://certificates.soyhenry.com/new-cert?id=d6fd5604f4f00d04db10391bbbf5b624a7f15ffe9af8301007d039eb89ca05d7' },
+    { id: 2, imgSrc: CerDB, linkUrl: 'https://www.udemy.com/certificate/UC-9e2bb22a-6e8e-4bb7-9d86-23703b3f9a52' },
+    { id: 3, imgSrc: CerTest, linkUrl: 'https://www.udemy.com/certificate/UC-3c46ce1a-6296-436e-a338-44f48974a960' },
   ];
 
   const handleOpenModal = () => {
@@ -34,7 +34,6 @@ const CustomCertModal = () => {
 
   const handleCloseModal = () => {
     setShowModal(false);
-    
   };
 
   return (
@@ -49,12 +48,12 @@ const CustomCertModal = () => {
         style={{ cursor: 'pointer', ...springProps }} 
       />
 
-      <Modal show={showModal} onHide={handleCloseModal}>
+      <Modal show={showModal} onHide={handleCloseModal} tabIndex="-1" aria-labelledby="exampleModalLabel" centered>
         <Modal.Header closeButton>
           <Modal.Title>Certificados</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Carousel>
+          <Carousel interval={2000} prevIcon={<span className="carousel-control-prev-icon" aria-hidden="true" />} nextIcon={<span className="carousel-control-next-icon" aria-hidden="true"   />}>
             {certificates.map((certificate) => (
               <Carousel.Item key={certificate.id}>
                 <img

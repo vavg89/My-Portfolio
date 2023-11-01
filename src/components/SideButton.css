@@ -23,15 +23,7 @@
         z-index: 1;
         transform: scale(0.9);
       }
-      .Stripe-1 {
-        display: none;
-      }
-      .Stripe-2 {
-        display: none;
-      }
-      .Stripe-3 {
-        display: none;
-      }
+   
     }
   
   @media (min-width: 577px) and (max-width: 991px) {
@@ -40,13 +32,7 @@
        
         position: absolute;
        
-      }
-      .Stripe {
-        position: absolute;
-        
-        transform: scale(1);
-        z-Index: 1,
-      }
+      }  
       
   }
   
@@ -62,12 +48,7 @@
       transform: scale(1.1); 
     }
 
-    .Stripe-1 {
-      position: absolute;
-      margin-top: 15%;
-      transform: scale(0.5) scaleX(-1);;
-      z-Index: 1,
-    }
+   
 
     .container-2{
       margin-top: 25.2%;
@@ -80,12 +61,7 @@
       transform: scale(1.1); 
     }
 
-    .Stripe-2 {
-      position: absolute;
-      margin-top: 23%;
-      transform: scale(0.5) scaleX(-1);;
-     
-    }
+   
 
     .container-3 {
       margin-top: 33.2%;
@@ -98,12 +74,7 @@
       transform: scale(1.1); 
     }
 
-    .Stripe-3 {
-      position: absolute;
-      margin-top: 31%;
-      transform: scale(0.5) scaleX(-1);;
-      z-Index: 1,
-    }
+ 
 
      
   }

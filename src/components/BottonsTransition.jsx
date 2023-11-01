@@ -6,8 +6,7 @@ import github from '../assets/github.png';
 import henry from '../assets/HenryTalent.jpeg';
 
 const BottonsTransition = () => {
-  const [position, setPosition] = useState('-900px');
-  const [positionb, setPositionb] = useState('-3000px');  
+  const [position, setPosition] = useState('-900px'); 
   const linkUrl = "https://www.linkedin.com/in/victor-vanderviest-193b34256/";
   const gitUrl = 'https://www.github.com/vavg89/';
   const henryUrl = 'https://www.talent.soyhenry.com/es?searchInput=victor%20vanderviest';
@@ -17,8 +16,7 @@ const BottonsTransition = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setPosition('1cm');
-      setPositionb('-65%');
+      setPosition('1cm');    
     }, 500);
   }, []);
 
@@ -28,17 +26,7 @@ const BottonsTransition = () => {
 
   return (
     <div>
-        <div>
-
-            <img
-        className='img-Stripe-1'
-        src="../assets/franja.png"
-        alt="Franja"
-        style={{         
-          left: positionb,          
-          transition: 'left 0.9s ease',          
-        }}
-      />
+        <div>       
       <div
         className={`container-img-1`}
         style={{
@@ -48,17 +36,7 @@ const BottonsTransition = () => {
         <CustomLinkButton linkUrl={linkUrl} imageUrl={linkedin} />
       </div>   
         </div>
-        <div>
-
-          <img
-        className='img-Stripe-2'
-        src="../assets/franja.png"
-        alt="Franja"
-        style={{         
-          left: positionb,          
-          transition: 'left 0.9s ease',          
-        }}
-      />
+        <div>         
       <div
         className={`container-img-2`}
         style={{
@@ -68,17 +46,7 @@ const BottonsTransition = () => {
         <CustomLinkButton linkUrl={gitUrl} imageUrl={gitImg} />
       </div>          
     </div>  
-     <div>
-
-          <img
-        className='img-Stripe-3'
-        src="../assets/franja.png"
-        alt="Franja"
-        style={{         
-          left: positionb,          
-          transition: 'left 0.9s ease',          
-        }}
-      />
+     <div>        
       <div
         className={`container-img-3`}
         style={{
