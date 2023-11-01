@@ -5,6 +5,7 @@ import Navbar from '../components/navbar';
 import Technologies from '../pages/technologies';
 import BottonsTransition from '../components/BottonsTransition';
 import SideButton from '../components/SideButton';
+import Projects from './projects';
 
 
 const url = (name, wrap = false) =>
@@ -119,7 +120,7 @@ export default function ParallaxPages() {
             justifyContent: 'center',
           }}
           onClick={() => parallax.current.scrollTo(2)}>
-          <img src={url('clients-main')} alt="Clients" style={{ width: '40%' }} />
+          <Projects/>
         </ParallaxLayer>
       </Parallax>
     </div>

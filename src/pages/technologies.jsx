@@ -49,7 +49,7 @@ function Technologies() {
   
   return (
     <div className="container-fluid">
-      
+       
       <div className="images-container">
         {images.map((image, index) => (
           <TransitionImage key={index} delay={(index + 1) * 5} url={image.url}>
