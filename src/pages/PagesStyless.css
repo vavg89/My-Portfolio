@@ -41,12 +41,19 @@
  .img-fluid{
   color: aliceblue;
   margin-top: 50%;
-  margin-left: auto;
-    transform: scale(0.5);
+  margin-left: -30%;
+  transform: scale(0.4);
+}
+
+.imgCer {
+  transform: scale(0);
+  z-index: 1;
+  margin-top: -160%;
+  margin-left: -45%;
 }
 .text-container {
   background-color: transparent;
-  margin-top: -30%;
+  margin-top: -40%;
  }
 
 }
@@ -68,19 +75,20 @@
 .img-fluid{
   color: aliceblue;
   margin-top: 25%;
-  margin-left: 3%;
+  margin-left: -15%;
   max-width: 70%;
   height: auto;
   transform: scale(0.7);
 }
 
 .text-container {
-  background-color: white;
-  margin-top: 20%;
+  background-color: transparent;
+  margin-top: -80%;
+  margin-left: 110%;
   margin-bottom: 15%;
   padding: 10px;
   border-radius: 1%;
-  width: 50%;
+  width: 100%;
 }
 
 .images-container {
@@ -111,6 +119,15 @@
 .images{
    justify-content: center;
    margin: 4%;
+}
+
+.imgCer {
+  display: flex;
+  flex-wrap: wrap;
+  transform: scale(0.9);
+  z-index: 1;
+  margin-top: -95%;
+  margin-left: 16%;
 }
 
 }

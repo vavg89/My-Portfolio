@@ -2,6 +2,7 @@ import React from "react";
 import './PagesStyless.css';
 import imagen from '../assets/Yo.png';
 import TransitionComponent from '../components/TransitionComponent';
+import CustomCertModal from "../components/CustomCertModal";
 
 
 function KnowMe() {
@@ -15,8 +16,8 @@ function KnowMe() {
                 <div className="row">
                     <div className="col-md-6">
                         <img src={imagen} className="img-fluid" alt="Victor Vanderviest" />
-                    </div>
-                    <div className="text-container">
+                        <CustomCertModal />  
+                        <div className="text-container">
                         <h2>Victor Vanderviest</h2>
                         <h3>Full Stack Developer</h3>
                         <p >
@@ -29,7 +30,10 @@ function KnowMe() {
                         ¡Explora mi portafolio para descubrir más sobre mis proyectos y habilidades!
 
                         </p>
+                        </div>
                     </div>
+                   
+                  
                 </div>
             </div>
             </TransitionComponent>
