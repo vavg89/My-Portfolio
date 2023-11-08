@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import '../pages/PagesStyless.css';
 import { Modal, Button, Carousel } from 'react-bootstrap';
 import CertificadosImg from '../assets/Certificados.png';
 import CerHenry from "../assets/soyhenrycer.jpg";
@@ -8,6 +7,7 @@ import CerDB from "../assets/BasededatosUdemy.jpg";
 import CerTest from "../assets/TestingUdemy.jpg"
 
 const CustomCertModal = () => {
+  const [currentCertIndex, setCurrentCertIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
   // eslint-disable-next-line
   const [hovered, setHovered] = useState(false);
@@ -39,8 +39,8 @@ const CustomCertModal = () => {
   return (
     <>
       <animated.img 
-        src={CertificadosImg} 
-        className="imgCer" 
+        className ="bcert"
+        src={CertificadosImg}       
         alt="Botón de Certificados" 
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -53,22 +53,33 @@ const CustomCertModal = () => {
           <Modal.Title>Certificados</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Carousel interval={2000} prevIcon={<span className="carousel-control-prev-icon" aria-hidden="true" />} nextIcon={<span className="carousel-control-next-icon" aria-hidden="true"   />}>
-            {certificates.map((certificate) => (
+          <Carousel 
+            interval={2000} 
+            prevIcon={<span className="carousel-control-prev-icon" aria-hidden="true" />} 
+            nextIcon={<span className="carousel-control-next-icon" aria-hidden="true" />}
+            onSelect={(selectedIndex, e) => setCurrentCertIndex(selectedIndex)}
+          >
+            {certificates.map((certificate, index) => (
               <Carousel.Item key={certificate.id}>
                 <img
                   className="d-block w-100"
                   src={certificate.imgSrc}
                   alt={`Certificado ${certificate.id}`}
                 />
-                <Carousel.Caption>
-                  <Button variant="primary" href={certificate.linkUrl} target="_blank" rel="noopener noreferrer">
-                    Ver certificado
-                  </Button>
-                </Carousel.Caption>
               </Carousel.Item>
             ))}
           </Carousel>
+          <div className="text-center mt-3">
+            <Button 
+              variant="primary" 
+              href={certificates[currentCertIndex].linkUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="mx-2"
+            >
+              Ver certificado
+            </Button>
+          </div>
         </Modal.Body>
       </Modal>
     </>

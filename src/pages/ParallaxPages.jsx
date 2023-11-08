@@ -1,11 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import KnowMe from '../pages/knowMe';
-import Navbar from '../components/navbar';
 import Technologies from '../pages/technologies';
 import BottonsTransition from '../components/BottonsTransition';
 import SideButton from '../components/SideButton';
 import Projects from './projects';
+import CustomModal from '../components/CustomModal';
+import "../pages/PagesStyless.css";
 
 
 const url = (name, wrap = false) =>
@@ -13,12 +14,40 @@ const url = (name, wrap = false) =>
 
 export default function ParallaxPages() {
   const parallax = useRef(null);
+  const [currentPage, setCurrentPage] = useState(0);
+
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+    parallax.current.scrollTo(page);
+  };
+
   
   return (
-    <div style={{ width: '100%', height: '100%', background: '#253237' }}>
-      <Navbar parallax={parallax}/>
-      <BottonsTransition/>
-      <SideButton/>
+    <div >
+       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-center">
+    <ul className="nav">
+      <li className={currentPage === 0 ? 'nav-item active' : 'nav-item'}>
+        <a className={currentPage === 0 ? 'nav-link active' : 'nav-link'} href="#knowMe" onClick={() => handlePageChange(0)}>
+          Conóceme
+        </a>
+      </li>
+      <li className={currentPage === 1 ? 'nav-item active' : 'nav-item'}>
+        <a className={currentPage === 1 ? 'nav-link active' : 'nav-link'} href="#technologies" onClick={() => handlePageChange(1)}>
+          Tecnologías
+        </a>
+      </li>
+      <li className={currentPage === 2 ? 'nav-item active' : 'nav-item'}>
+        <a className={currentPage === 2 ? 'nav-link active' : 'nav-link'} href="#projects" onClick={() => handlePageChange(2)}>
+          Repositorios
+        </a>
+      </li>
+    </ul>
+    <CustomModal />
+  </nav>
+      <div style={{ width: '100%', height: '100%', background: '#253237' }}>
+        <BottonsTransition />
+      <SideButton />
 
       <Parallax ref={parallax} pages={3}>
        
@@ -90,7 +119,12 @@ export default function ParallaxPages() {
         <ParallaxLayer
           offset={0}
           speed={0.1}
-          onClick={() => parallax.current.scrollTo(0)}
+          onMouseEnter={()=> setCurrentPage(0)}
+          onTouchStart={()=> setCurrentPage(0)}
+          onClick={() => { 
+            parallax.current.scrollTo(0);
+            setCurrentPage(0); 
+          }}
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -102,7 +136,12 @@ export default function ParallaxPages() {
         <ParallaxLayer
           offset={1}
           speed={0.1}
-          onClick={() => parallax.current.scrollTo(1)}
+          PageChange
+          onMouseEnter={()=> setCurrentPage(1)}
+          onTouchStart={()=> setCurrentPage(1)}
+          onClick={() => { 
+            parallax.current.scrollTo(1)
+          }}
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -119,10 +158,14 @@ export default function ParallaxPages() {
             alignItems: 'center',
             justifyContent: 'center',
           }}
+          onMouseEnter={()=> setCurrentPage(2)}
+          onTouchStart={()=> setCurrentPage(2)}
           onClick={() => parallax.current.scrollTo(2)}>
           <Projects/>
         </ParallaxLayer>
       </Parallax>
+      </div>
+      
     </div>
   );
 }

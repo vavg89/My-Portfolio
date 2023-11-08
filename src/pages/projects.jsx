@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './PagesStyless.css';
 import { Carousel, Button } from 'react-bootstrap';
 
@@ -8,57 +8,65 @@ import ProjectImage2 from '../assets/proyectopaises.png';
 import ProjectImage3 from '../assets/proyectorickandmorty.png';
 
 function Projects() {
+  const [projectInfo, setProjectInfo] = useState({
+    title: 'Proyecto 1',
+    description: 'Descripción del Proyecto 1',
+    repositoryLink: 'https://github.com/vavg89/E-commerce-demo'
+  });
+
+  const handleCarouselSelect = (selectedIndex) => {
+    if (selectedIndex === 0) {
+      setProjectInfo({
+        title: 'Modelo de E-Commerce',
+        repositoryLink: 'https://github.com/CristianSombra/PF_Grupal/tree/main'
+      });
+    } else if (selectedIndex === 1) {
+      setProjectInfo({
+        title: 'Paises y actividades',
+        repositoryLink: 'https://github.com/vavg89/PICountries-henry'
+      });
+    } else if (selectedIndex === 2) {
+      setProjectInfo({
+        title: 'Rick and morty API-henry',
+        repositoryLink: 'https://github.com/vavg89/rick_and_morty'
+      });
+    }
+  };
+
   return (
-    <div className="Background">
+    <div className="container-fluid">
       <div>
-       
-        <Carousel className="imgP">
+        <h1 className="title">Repositorios</h1>
+        <h1 className="title2">{projectInfo.title}</h1>
+        <p>{projectInfo.description}</p>
+        <Carousel className="imgP" onSelect={handleCarouselSelect}>
           <Carousel.Item>
             <img
               className="d-block w-100"
               src={ProjectImage1}
               alt="Proyecto 1"
-             
             />
-            <Carousel.Caption>
-              <h3>Proyecto 1</h3>
-              <p>Descripción del proyecto 1.</p>
-              <Button variant="primary" href="https://link-al-repositorio-1" target="_blank" rel="noopener noreferrer">
-                Ver repositorio
-              </Button>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
               src={ProjectImage2}
               alt="Proyecto 2"
-              
             />
-            <Carousel.Caption>
-              <h3>Proyecto 2</h3>
-              <p>Descripción del proyecto 2.</p>
-              <Button variant="primary" href="https://link-al-repositorio-2" target="_blank" rel="noopener noreferrer">
-                Ver repositorio
-              </Button>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
               src={ProjectImage3}
               alt="Proyecto 3"
-            
             />
-            <Carousel.Caption>
-              <h3>Proyecto 3</h3>
-              <p>Descripción del proyecto 3.</p>
-              <Button variant="primary" href="https://link-al-repositorio-3" target="_blank" rel="noopener noreferrer">
-                Ver repositorio
-              </Button>
-            </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+        <div className="d-flex justify-content-center ">
+          <Button  className ="marg" variant="primary" href={projectInfo.repositoryLink} target="_blank" rel="noopener noreferrer">
+            Ver Repositorio
+          </Button>
+        </div>
       </div>
     </div>
   );

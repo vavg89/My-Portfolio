@@ -52,12 +52,15 @@ const CustomModal = () => {
       borderColor: "#252525",
       color: "#ffffff",
     },
+    customButtonText: {
+      color: "#4169E1", 
+    },
   };
 
   return (
     <>
-      <Button variant="custom" style={styles.customButton} onClick={() => setShow(true)}>
-        Contactame
+      <Button variant="dark" style={styles.customButton} onClick={() => setShow(true)}>
+      <span style={styles.customButtonText}>Contactame</span>
       </Button>
 
       <animated.div style={fadeIn}>
