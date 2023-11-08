@@ -39,10 +39,12 @@ function Projects() {
         <h1 className="title">Repositorios</h1>
         <h1 className="title2">{projectInfo.title}</h1>
         <p>{projectInfo.description}</p>
-        <Carousel className="imgP" onSelect={handleCarouselSelect}>
+        <Carousel className="imgP dark" style={{ fill: "#4169E1" }} onSelect={handleCarouselSelect}>
+          
           <Carousel.Item>
             <img
-              className="d-block w-100"
+             
+              className="d-block w-100 "
               src={ProjectImage1}
               alt="Proyecto 1"
             />
