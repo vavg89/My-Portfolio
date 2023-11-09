@@ -9,7 +9,7 @@ function KnowMe() {
       
         <TransitionComponent duration={1200} delay={200} opacity={1} marginTop={0} AnimatedActive={false}>                  
               <img className="imgYo" src={imagen} alt="Victor Vanderviest" />
-              <CustomCertModal />
+              <CustomCertModal className ="bcert "/>
               <div className='txtKnowmeColor'>
                 <h2 >Victor Vanderviest</h2>
               <h3>Full Stack Developer</h3>

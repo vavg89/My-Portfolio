@@ -25,8 +25,8 @@ export default function ParallaxPages() {
   
   return (
     <div >
-       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-center">
-    <ul className="nav">
+       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-center ">
+    <ul className="nav ">
       <li className={currentPage === 0 ? 'nav-item active' : 'nav-item'}>
         <a className={currentPage === 0 ? 'nav-link active' : 'nav-link'} href="#knowMe" onClick={() => handlePageChange(0)}>
           Conóceme

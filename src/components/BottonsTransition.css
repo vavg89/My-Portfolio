@@ -1,25 +1,52 @@
-  @media (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 399px) {
+  .container-img-1 {
+    font-size: 15px;
+    margin-left: 1%;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    transform: scale(0.5);
+    }
+  .container-img-2 {
+    font-size: 15px;
+      margin-left: -13%;
+      bottom: 0;
+    position: fixed;
+      z-index: 1;
+      transform: scale(0.5);
+    }
+  .container-img-3 {
+    font-size: 15px;
+    margin-left: 15%;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    transform: scale(0.5);
+    }
+}
+  
+  @media (min-width: 400px) and (max-width: 767px){
     .container-img-1 {
       font-size: 15px;
       margin-left: 6.5%;
-      top: 93%;
-      position: absolute;
+      bottom: 0; 
+      position: fixed;
       z-index: 1;
       transform: scale(0.7);
       }
     .container-img-2 {
       font-size: 15px;
         margin-left: -10%;
-        top: 93%; 
-        position: absolute;
+        bottom: 0; 
+        position: fixed;
         z-index: 1;
         transform: scale(0.7);
       }
     .container-img-3 {
       font-size: 15px;
       margin-left: 23%;
-      top: 93%; 
-      position: absolute;
+      bottom: 0; 
+      position: fixed;
       z-index: 1;
       transform: scale(0.7);
       }
@@ -29,24 +56,24 @@
     .container-img-1 {
       font-size: 15px;
       margin-left: 0%;
-      top: 93%;
-      position: absolute;
+      bottom: 0; 
+      position: fixed;
       z-index: 1;
       transform: scale(0.9);
       }
     .container-img-2 {
       font-size: 15px;
         margin-left: 15%;
-        top: 93%; 
-        position: absolute;
+        bottom: 0; 
+        position: fixed;
         z-index: 1;
         transform: scale(0.9);
       }
     .container-img-3 {
       font-size: 15px;
       margin-left: 30%;
-      top: 93%; 
-      position: absolute;
+      bottom: 0; 
+      position: fixed;
       z-index: 1;
       transform: scale(0.9);
       } 
