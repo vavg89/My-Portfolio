@@ -46,19 +46,22 @@ const images = [
 ];
 
 function Technologies() {
-  
   return (
-    <div className="container-fluid">
-       <h1 className="titlet">Tecnologias</h1>
-      <div className="images-container">
-        {images.map((image, index) => (
-          <TransitionImage key={index} delay={(index + 1) * 5} url={image.url}>
-            <img src={image.src} alt={image.alt} className="tech-image" />
-          </TransitionImage>
-        ))}
+    <div className="container">
+
+    <div className="row">
+      <div>
+       <h1 className="titlet mb-5 text-center">Tecnologias</h1>
       </div>
-             
+      {images.map((image, index) => (
+        <div key={index} className="col-2  mb-5 mx-auto">
+          <TransitionImage delay={(index + 1)} url={image.url}>
+            <img src={image.src} alt={image.alt} className="img-fluid" />
+          </TransitionImage>
+        </div>
+      ))}
     </div>
+  </div>
   );
 }
 

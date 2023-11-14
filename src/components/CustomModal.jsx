@@ -60,7 +60,7 @@ const CustomModal = () => {
   return (
     <>
       <Button variant="dark" style={styles.customButton} onClick={() => setShow(true)}>
-      <span style={styles.customButtonText}>Contactame</span>
+      <span className='nav-link' style={styles.customButtonText}>Contactame</span>
       </Button>
 
       <animated.div style={fadeIn}>

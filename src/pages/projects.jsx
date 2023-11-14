@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import './PagesStyless.css';
 import { Carousel, Button } from 'react-bootstrap';
-
-// Importa las imágenes de tus proyectos
 import ProjectImage1 from '../assets/Proyectoecomerce.png';
 import ProjectImage2 from '../assets/proyectopaises.png';
 import ProjectImage3 from '../assets/proyectorickandmorty.png';
@@ -33,10 +31,10 @@ function Projects() {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div>
-        <h1 className="title">Repositorios</h1>
-        <h1 className="title2">{projectInfo.title}</h1>
+        <h1 className="title mb-3 text-center">Repositorios</h1>
+        <h1 className="title2 mb-3 text-center">{projectInfo.title}</h1>
         <p>{projectInfo.description}</p>
         <Carousel className="imgP dark" style={{ fill: "#4169E1" }} onSelect={handleCarouselSelect}>
           
@@ -64,7 +62,7 @@ function Projects() {
           </Carousel.Item>
         </Carousel>
         <div className="d-flex justify-content-center ">
-          <Button  className ="marg" variant="primary" href={projectInfo.repositoryLink} target="_blank" rel="noopener noreferrer">
+          <Button  variant="primary" href={projectInfo.repositoryLink} target="_blank" rel="noopener noreferrer">
             Ver Repositorio
           </Button>
         </div>

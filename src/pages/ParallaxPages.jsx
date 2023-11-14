@@ -43,7 +43,7 @@ export default function ParallaxPages() {
         </a>
       </li>
     </ul>
-    <CustomModal />
+    <CustomModal  />
   </nav>
       <div style={{ width: '100%', height: '100%', background: '#253237' }}>
         <BottonsTransition />

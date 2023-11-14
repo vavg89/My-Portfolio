@@ -1,29 +1,20 @@
 import React from 'react';
-import imagen from '../assets/Yo.png';
 import TransitionComponent from '../components/TransitionComponent';
-import CustomCertModal from '../components/CustomCertModal';
+import CustomCert from '../components/CustomCert';
 
 function KnowMe() {
   return (
-    <div className="container justify-content-center row d-flex">
+    <div className="container">
       <TransitionComponent duration={1200} delay={200} opacity={1} marginTop={0} AnimatedActive={false}>
-        {/* Utilizamos la clase "row" para crear una fila de Bootstrap */}
-        <div className="row">
-          {/* Columna para la imagen de Victor Vanderviest */}
-          <div className="col-md-6">
-            <img className="imgYo" src={imagen} alt="Victor Vanderviest" />
-          </div>
-          {/* Columna para la imagen de CustomCertModal */}
-          <div className="col-md-6">
-            <CustomCertModal className="bcert" />
-          </div>
+        <div className='mb-6 col-8 mx-auto c-v'>
+          <CustomCert/>
         </div>
+       
 
-        {/* Renderizamos el div con la clase 'txtKnowmeColor' debajo de las imágenes */}
-        <div className='txtKnowmeColor'>
+        <div className='txtKnowmeColor text-center txtMin'>
           <h2>Victor Vanderviest</h2>
-          <h3>Full Stack Developer</h3>
-          <h6 >
+          <h3 >Full Stack Developer</h3>
+          <h6 className='txtMin'>
                 Soy un apasionado desarrollador Full Stack con una sólida experiencia en JavaScript, TypeScript, PHP, React, Node.js, Redux, Express, Axios.
                 Mi enfoque se basa en la implementación de prácticas de desarrollo ágiles que permiten desarrollar sistemas robustos y escalables que ofrecen un rendimiento excepcional.
                 Además, mi conocimiento en el desarrollo de interfaces de usuario (UI) y experiencia de usuario (UX) me permite crear productos atractivos y fáciles de usar.
