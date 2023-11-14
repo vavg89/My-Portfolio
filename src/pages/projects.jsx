@@ -9,8 +9,7 @@ import ProjectImage3 from '../assets/proyectorickandmorty.png';
 
 function Projects() {
   const [projectInfo, setProjectInfo] = useState({
-    title: 'Proyecto 1',
-    description: 'Descripción del Proyecto 1',
+    title: 'Modelo de E-Commerce',    
     repositoryLink: 'https://github.com/vavg89/E-commerce-demo'
   });
 
