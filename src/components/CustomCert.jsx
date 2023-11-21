@@ -33,13 +33,13 @@ const CustomCert = () => {
               </Carousel.Item>
             ))}
           </Carousel>
-          <div className="text-center mt-3">
+          <div className="text-center mt-1">
             <Button 
               variant="primary" 
               href={certificates[currentCertIndex].linkUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="mx-2"
+              className="mx-2 btn-sm"
             >
               Ver certificado
             </Button>

@@ -13,7 +13,7 @@ const SideButton = () => {
     
     const wahtsappUrl = "https://wa.me/+5491127051235";
     const correoUrl = 'mailto:vavg89.ar@gmail.com';
-    const cvUrl = 'https://drive.google.com/file/d/1NO41C627No9xTA1jDr-V_csvwdCTT0O6/view?usp=sharing';
+    const cvUrl = 'https://drive.google.com/file/d/18aAJ682Ja73aAdhpvitmAwLjgeid7gNo/view?usp=sharing';
    
    
     useEffect(() => {

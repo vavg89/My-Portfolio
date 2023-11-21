@@ -12,7 +12,11 @@
  color: #4169E1;   
 }
 
-
+.transition-image-container {
+  width: 100px; /* Ancho de la imagen */
+  height: 100px; /* Alto de la imagen */
+ 
+}
 
 
 /*Proyectos css:*/
@@ -23,11 +27,6 @@
 
 }
 
-.title2{
-
- color: #4169E1;
-
-}
 
 .imgP{
 
@@ -43,19 +42,14 @@
 }
 
 .nav-link.active {
- color: #ffffff;
+ color: #4169E1;
 }
 
-
-.carousel-control-prev,
-.carousel-control-next {
-  fill: #4169E1; /* Cambia el color de la flecha a azul (#4169E1) */
+.nav-link{
+  color: #ffffff;
 }
 
-@media (max-width: 407px){
-  .c-v{
-  margin-top: 45%;
-}
+@media (max-width: 600px){
 
 .nav-link {
   font-size: 8px; /* Ajusta el tamaño de fuente para pantallas pequeñas */

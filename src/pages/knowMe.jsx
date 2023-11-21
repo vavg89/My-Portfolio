@@ -6,26 +6,26 @@ function KnowMe() {
   return (
     <div className="container">
       <TransitionComponent duration={1200} delay={200} opacity={1} marginTop={0} AnimatedActive={false}>
-        <div className='mb-6 col-8 mx-auto c-v'>
+        <div className='mb-6 col-8 mx-auto '>
           <CustomCert/>
         </div>
+        <hr/>
        
 
-        <div className='txtKnowmeColor text-center txtMin'>
-          <h2>Victor Vanderviest</h2>
-          <h3 >Full Stack Developer</h3>
+        <div className='txtKnowmeColor text-center  font-family-serif'>
+          <h2 className='font-family-serif txtMin'>Victor Vanderviest</h2>
+          <h3 className='txtMin'>Full Stack Developer</h3>
           <h6 className='txtMin'>
-                Soy un apasionado desarrollador Full Stack con una sólida experiencia en JavaScript, TypeScript, PHP, React, Node.js, Redux, Express, Axios.
-                Mi enfoque se basa en la implementación de prácticas de desarrollo ágiles que permiten desarrollar sistemas robustos y escalables que ofrecen un rendimiento excepcional.
-                Además, mi conocimiento en el desarrollo de interfaces de usuario (UI) y experiencia de usuario (UX) me permite crear productos atractivos y fáciles de usar.
-
-                He trabajado en entornos de integración y entrega continua (CI/CD) para garantizar la eficiencia y la entrega de proyectos exitosos en plazos ajustados,
-                mi experiencia en el diseño y manejo de bases de datos relacionales es fundamental para la creación de sistemas de datos eficientes y seguros.
-
-                Si estás buscando un profesional con un enfoque en la excelencia técnica y la innovación constante, ¡has llegado al lugar adecuado!
-
-                ¡Explora mi portafolio para descubrir qué tecnologías he aplicado y mis repositorios en Git-Hub, si tienes alguna pregunta no dudes en contactarme!
-                </h6>
+          <hr/>
+          "Soy un apasionado desarrollador Full Stack con experiencia en lenguajes como JavaScript, PHP, React, Node.js, Vue.js, Vuex, Pinia, Redux, 
+          Express y Axios. He participado en marcos de desarrollo ágiles como Scrum, junto a entornos de integración y entrega continua (CI/CD), integrado a 
+          plataformas como GitHub, firebase y herramientas de automatización de pruebas como Jenkins.     
+          Participo en el mantenimiento, mejora y resolución de problemas en las interfaces de usuario (UI) y experiencia de usuario (UX), microservicios, 
+          gestión y desarrollo de APIs REST y bases de datos relacionales.
+           <hr/>
+           Si estás buscando un profesional con enfoque en la excelencia técnica y la innovación constante, ¡has llegado al lugar adecuado!"
+          ¡Explora mi portafolio para descubrir qué tecnologías he aplicado y mis repositorios en Git-Hub, si tienes alguna pregunta no dudes en contactarme!
+          </h6>
         </div>
       </TransitionComponent>
     </div>

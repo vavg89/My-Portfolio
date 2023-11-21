@@ -21,6 +21,8 @@ import Nodejs from "../assets/nodejs.png";
 import PhpImg from "../assets/php.png";
 import Javascript from "../assets/javascript.png";
 import Expressimg from "../assets/express.png";
+import Vue from "../assets/vue.png";
+import FirebaseImg from "../assets/firebase.png";
 
 const images = [
   { src: Bootstrap, alt: "Bootstrap", url: "https://getbootstrap.com" },
@@ -43,6 +45,8 @@ const images = [
   { src: PhpImg, alt: "PhpImg", url: "https://www.php.net" },
   { src: Javascript, alt: "Javascript", url: "https://www.javascript.com" },
   { src: Expressimg, alt: "Expressimg", url: "https://expressjs.com/es" },
+  { src: Vue, alt: "Vue", url: "https://vuejs.org/" },
+  { src: FirebaseImg, alt: "Firebase", url: "https://firebase.google.com/?hl=es-419" },
 ];
 
 function Technologies() {
@@ -51,10 +55,11 @@ function Technologies() {
 
     <div className="row">
       <div>
-       <h1 className="titlet mb-5 text-center">Tecnologias</h1>
-      </div>
+       <h1 className="titlet mb-5 text-center ">Tecnologias</h1>
+      </div >
+      
       {images.map((image, index) => (
-        <div key={index} className="col-2  mb-5 mx-auto">
+        <div key={index} className="col-2 mb-1 mb-3 mx-auto">
           <TransitionImage delay={(index + 1)} url={image.url}>
             <img src={image.src} alt={image.alt} className="img-fluid" />
           </TransitionImage>
